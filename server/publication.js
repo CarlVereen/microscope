@@ -1,5 +1,3 @@
-❯ Posts.insert({
-  title: 'Meteor Docs',
-  author: 'Tom Coleman',
-  url: 'http://docs.meteor.com'
+Meteor.publish('posts', function() {
+  return Posts.find();
 });
